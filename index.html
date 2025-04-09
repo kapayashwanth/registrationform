@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <label for="name">Name </label>
+        <input type="text" id="name" /><br /><br />
+        <label for="age">Age </label>
+        <input type="number" id="age" /><br /><br />
+        <label for="dob">Date of Birth </label>
+        <input type="date" id="dob" /><br /><br />
+        <label for="gender">Gender </label>
+        <div class="container">
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label><br /><br />
+        </div>
+        <label for="college">College</label>
+        <input type="text" id="college" /><br /><br />
+        <label for="branch">Branch</label>
+        <select name="branch" id="branch">
+          <option value="" selected disabled>Select Branch</option>
+          <option value="cse">Computer Science and Engineering</option>
+          <option value="ece">Electrical and Communication Engineering</option>
+          <option value="mech">Mechanical Engineering</option>
+          <option value="civil">Civil Engineering</option>
+          <option value="it">Information Technology</option></select
+        ><br /><br />
+        <label for="year">Year</label>
+        <input type="number" id="year" /><br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><b>Academic Information</b></legend>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Details</th>
+            <th>Class 12</th>
+            <th>Class 10</th>
+          </tr>
+          <tr>
+            <td>School Name</td>
+            <td><input type="text" id="school12" /></td>
+            <td><input type="text" id="school10" /></td>
+          </tr>
+          <tr>
+            <td>Board</td>
+            <td>
+              <select name="board12" id="board12">
+                <option value="" selected disabled>Select Board</option>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State Board</option>
+              </select>
+            </td>
+            <td>
+              <select name="board10" id="board10">
+                <option value="" selected disabled>Select Board</option>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State Board</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Passing Year</td>
+            <td><input type="number" id="year12" /></td>
+            <td><input type="number" id="year10" /></td>
+          </tr>
+          <tr>
+            <td>Percentage/Marks</td>
+            <td><input type="number" id="marks12" step="0.01" /></td>
+            <td><input type="number" id="marks10" step="0.01" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><b>Extra Curricular Activities</b></legend>
+        <h3>Sports</h3>
+        <div class="container">
+          <input type="checkbox" id="cricket" name="sports" value="cricket" />
+          <label for="cricket">Cricket</label><br />
+          <input type="checkbox" id="football" name="sports" value="football" />
+          <label for="football">Football</label><br />
+          <input
+            type="checkbox"
+            id="badminton"
+            name="sports"
+            value="badminton"
+          />
+          <label for="badminton">Badminton</label><br />
+          <input type="checkbox" id="chess" name="sports" value="chess" />
+          <label for="chess">Chess</label>
+        </div>
+        <h3>Technical Skills</h3>
+        <div class="container">
+          <input type="checkbox" id="c" name="tech_skills" value="c" />
+          <label for="c">C</label><br />
+          <input type="checkbox" id="cpp" name="tech_skills" value="cpp" />
+          <label for="cpp">C++</label><br />
+          <input
+            type="checkbox"
+            id="python"
+            name="tech_skills"
+            value="python"
+          />
+          <label for="python">Python</label><br />
+          <input type="checkbox" id="java" name="tech_skills" value="java" />
+          <label for="java">Java</label><br />
+          <input type="checkbox" id="html" name="tech_skills" value="html" />
+          <label for="html">HTML</label>
+        </div>
+        <div class="inputBox">
+          <textarea
+            name="additional_skills"
+            id="additional_skills"
+            cols="60"
+            rows="3"
+            placeholder="Enter any additional technical skills..."
+          ></textarea>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><b>Remarks </b></legend>
+        <textarea name="remarks" id="remarks" cols="60" rows="10"></textarea>
+      </fieldset>
+      <br />
+      <div class="button-container">
+        <button class="animated-button nav-button">
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.8284 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.8284 12.9999H20V10.9999H7.8284Z"
+            ></path>
+          </svg>
+          <span class="text">Previous</span>
+          <span class="circle"></span>
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-2"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.8284 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.8284 12.9999H20V10.9999H7.8284Z"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="center-buttons">
+          <button class="animated-button" type="submit">
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Submit</span>
+            <span class="circle"></span>
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+
+          <button class="animated-button reset-button" type="reset">
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Reset</span>
+            <span class="circle"></span>
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <button class="animated-button nav-button">
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-2"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">Next</span>
+          <span class="circle"></span>
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <footer
+      style="
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        color: #666;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        border-top: 1px solid #ddd;
+      "
+    >
+      <p>&copy; 2024 Registration Form. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
